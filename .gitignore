@@ -1,0 +1,9 @@
+logs
+*.log
+.idea
+node_modules
+.vagrant
+dist
+public/*.map
+coverage
+public/
