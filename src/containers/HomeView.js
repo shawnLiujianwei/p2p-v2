@@ -62,12 +62,8 @@ let HomeView = React.createClass({
 
         return (
             <div className=' text-center'>
-                <button onClick={this.props.increment}>Test-------------</button>
-                Counter {this.props.counter}
-                <div className="col-md-2 side-bar">
-                    <LeftBar />
-                </div>
-                <div className="col-md-10">
+
+                <div className="col-md-12">
                     {products.map(product =>
                             <Product title={product.title} image={product.image[0]}/>
                     )}
@@ -76,6 +72,13 @@ let HomeView = React.createClass({
         );
     }
 });
+
+/*//<button onClick={this.props.increment}>Test-------------</button>
+ //Counter {this.props.counter}
+ //<div className="col-md-2 side-bar">
+ //    <LeftBar />
+ //</div>*/
+
 //<h1>Welcome to the React Redux Starter Kit</h1>
 //
 //<h2>Sample Counter: {this.props.counter}</h2>

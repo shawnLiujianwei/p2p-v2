@@ -15,32 +15,31 @@ export default React.createClass({
     "mixins": [ImmutableRenderMixin],
     render() {
 
-        let logo = require("../images/logo.png");
+        let logo = require("../images/logo.svg");
         return (
             <div className='header'>
                 <div className="row nav-bar">
-                    <div className="col-md-1 col-md-offset-8">请登录</div>
-                    <div className="col-md-1 ">客户服务</div>
-                    <div className="col-md-1 ">网站导航</div>
+                    <div className="col-md-1   pull-left">关注我们</div>
+                    <div className="col-md-2 pull-right">服务热线 400-650-9860</div>
                 </div>
                 <div className="row search-bar">
                     <div className="col-md-2"><img src={logo}/></div>
-                    <div className="col-md-4 col-md-offset-2">
-                        <div className="input-group">
-                            <input type="text" className="form-control" onKeyUp={this.props.filterItem}
-                                   placeholder="请输入查找的item"
-                                   class="form-control"/>
-                             <span className="input-group-btn">
-                                  <button className="btn btn-default" type="button">Go!</button>
-                             </span>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         )
     }
 })
-
+//<div className="col-md-4 col-md-offset-2">
+//<div className="input-group">
+//    <input type="text" className="form-control" onKeyUp={this.props.filterItem}
+//           placeholder="请输入查找的item"
+//           class="form-control"/>
+//                             <span className="input-group-btn">
+//                                  <button className="btn btn-default" type="button">Go!</button>
+//                             </span>
+//</div>
+//</div>
 //export default () => (
 //  <div className='nav pull-right'>
 //    <div className="row">
